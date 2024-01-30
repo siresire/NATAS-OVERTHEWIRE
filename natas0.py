@@ -1,9 +1,10 @@
 import requests
 import re
 
-url = 'http://natas0.natas.labs.overthewire.org'
 username = "natas0"
 password = "natas0"
+
+url = f'http://{username}.natas.labs.overthewire.org'
 
 auth = (username, password)
 r = requests.get(url, auth=auth)
